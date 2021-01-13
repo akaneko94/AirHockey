@@ -12,6 +12,9 @@ public class PlayerMain : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //60fpsに固定
+        Application.targetFrameRate = 120;
+
         pos = this.transform.position;
         rg = this.GetComponent<Rigidbody>();
     }
