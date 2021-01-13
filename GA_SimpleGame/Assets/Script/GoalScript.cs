@@ -7,6 +7,7 @@ public class GoalScript : MonoBehaviour
 {
     public Text ScoreText;
     private int DeathCount;
+    public int WinCount;
     public GameObject Ball;
     public GameObject Player;
     public GameObject Enemy;
@@ -43,7 +44,15 @@ public class GoalScript : MonoBehaviour
         if (other.tag == "Death")
         {
             DeathCount++;
-            ScoreText.text = DeathCount.ToString();
+            if (DeathCount == WinCount)
+            {
+                ScoreText.text = ("WIN");
+            }
+            else
+            {
+                ScoreText.text = DeathCount.ToString();
+
+            }
 
             Ball.transform.position = InitBallPos;
             Player.transform.position = InitPlayerPos;

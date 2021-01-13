@@ -38,7 +38,7 @@ public class EnemyMoveScript : MonoBehaviour
     private string[] sc_data = {
         "LLRRLLRRr",
         "XXSSYYSSLLUURRDDr",
-        "XYr",
+        "XSYSr",
         "SSSSSXXXXSSSSSYYYYYr",
         "LLLUUUSSSSSRRRRRRRDDDSSSSLLr"
     };
